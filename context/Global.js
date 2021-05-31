@@ -19,7 +19,7 @@ export default ({ children }) => {
         let d = new Date();
         let year = d.getFullYear();
         
-        const matchesResponse = await fetch(`https://api.football-data.org/v2/competitions/${year}/matches?status=SCHEDULED`, {
+        const matchesResponse = await fetch(`https://api.football-data.org/v2/competitions/${year}/matches`, {
             headers: {
                 'X-Auth-Token': 'API key'
             }
